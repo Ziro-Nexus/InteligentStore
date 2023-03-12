@@ -1,1 +1,1 @@
-<h1> Inteligent Store </h1>
+<h1 color="red"> Inteligent Store </h1>
