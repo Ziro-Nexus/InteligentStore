@@ -1,0 +1,46 @@
+# Ignorar archivos y carpetas generados por Visual Studio
+.vs/
+obj/
+bin/
+
+# Ignorar archivos y carpetas generados por .NET Core
+*.user
+*.vscode
+*.dll
+*.exe
+*.pdb
+*.log
+*bin/*
+*obj/*
+*TestResults/*
+
+# Ignorar archivos y carpetas generados por Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.env
+
+# Ignorar archivos y carpetas generados por React
+frontend/build/
+frontend/dist/
+frontend/*.env
+
+# Ignorar archivos de configuración de NuGet
+*.nuget.cache
+*.nuget.g.props
+*.nuget.g.targets
+
+# Ignorar archivos de configuración de JetBrains
+.idea/
+*.iml
+
+# Ignorar archivos de configuración de macOS
+.DS_Store
+.AppleDouble
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
