@@ -1,0 +1,63 @@
+.news {
+  background-image: url("../image/patronHacker.jpg");
+  background-size: cover;
+}
+.formOne{
+    width: 90%;
+    margin:auto;
+    border-radius: 2rem;
+    padding: 0.05rem;
+    text-align: center;
+    margin-top: 0.1rem;
+    transition: 0.5s ease;
+}
+.inpu{
+    display: inline-block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color:red ;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+.inpu:hover{
+    display: inline-block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: black ;
+    background-color: transparent;
+}
+
+.content {
+  position: absolute;
+  height: 95%;
+  width: 99%;
+  overflow-y: hidden;
+  border-radius: 2rem;
+}
+.container-buttons {
+  transition: 0.5s ease;
+}
+
+.container-buttons:hover {
+  width: 35%;
+  opacity: 1;
+  filter: contrast(110%);
+}
+nav {
+  margin-top: 5%;
+}
+h3 {
+  position: static;
+  margin-top: 30%;
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin-top: 3rem;
+}
+.logAndSig {
+  width: 100%;
+  margin-top: 5%;
+}
