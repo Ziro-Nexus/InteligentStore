@@ -1,0 +1,61 @@
+@keyframes moveForTwo {
+  25% {
+    margin-left: 0%;
+  }
+  28% {
+    margin-left: -100%;
+  }
+  54% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+@keyframes moveForThree {
+    25% {
+      margin-left: 0;
+    }
+    28% {
+      margin-left: -100%;
+    }
+    54% {
+      margin-left: -100%;
+    }
+    58% {
+      margin-left: -200%;
+    }
+    85% {
+      margin-left: -200%;
+    }
+    90% {
+      margin-left: -100%;
+    }
+    100% {
+      margin-left: 0%;
+    }
+  }
+
+  @keyframes moveColors {
+    25% {
+      background-color: red;
+    }
+    28% {
+      background-color: blue;
+    }
+    54% {
+      background-color: black;
+    }
+    58% {
+      background-color:  orange;
+    }
+    85% {
+      background-color: yellow;
+    }
+    90% {
+      background-color: green;
+    }
+    100% {
+      background-color: navy;
+    }
+  }

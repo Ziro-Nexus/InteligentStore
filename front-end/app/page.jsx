@@ -1,15 +1,19 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Container from './components/Container'
-import Navigation from './components/Navigation'
-import Router from 'next/navigation'
-
 const inter = Inter({ subsets: ['latin'] })
 
+import { Inter } from 'next/font/google'
+import Container from './components/Containers/Container'
+import {Headeris} from './components/Headeris'
+import ImageCarrusel from './components/carrusel/ImageCarrusel'
 export default function Home() {
 
   return (
-    <>
-    </>
+    <div className='txt-center '>
+        <Headeris />
+        <Container classis="container">
+          <ImageCarrusel>
+          </ImageCarrusel>
+        </Container> 
+
+    </div>
   )
 }

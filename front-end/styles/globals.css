@@ -1,26 +1,59 @@
+/*Importaciones*/
+@import "./animaciones.css";
+/*Titulos*/
+.title1{
+  font-size: 200%;
+}
+/*navigator*/
+.nav-container-v{
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  margin-right: 75%;
+  transition: 0.5s ease;
+}
+.nav-v{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: moveColors;
+}
+
+.nav-container-v:hover{
+  padding-top: 3rem;
+  text-align: center;
+}
+
 /*container*/
 .container{
 
   position: absolute;
   width: 90%;
-  height: 90%;
-  margin: 2%;
-  margin-left: 3.5%;
+  height: 85%;
+  margin: 1%;
+  margin-left: 5%;
   border-radius: 1rem;
 
 }
+.containerchild{
 
-/*navigator*/
-.nav-v{
   position: absolute;
-  width: 25%;
+  width: 75%;
   height: 100%;
-  margin-right: 75%;
+  margin-left: 25%;
   border-radius: 1rem;
-  transition: 0.5s ease;
+  box-sizing: content-box;
+
 }
-.nav-v:hover{
-  width: 35%;
+
+/*Headers*/
+.headeri{
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 1rem;
 }
 
 /*buttons*/
@@ -28,18 +61,19 @@
   position: relative;
   border-radius: 0.5rem;
   border-style: none;
-  padding: 0.5rem;
-  margin:8%;
-  width: 80%;
+  padding: 0.6rem;
+  margin: 2.5%;
+  width: 90%;
   text-decoration: none;
   list-style: none;
   text-align: center;
   color: white;
   display: inline-block;
+  font-size: 1.5rem;
 }
 
 .btn:hover{
-  background-color: orangered;
+  background-color: rgb(253, 111, 59);
 }
 
 /*bagraund*/
@@ -69,13 +103,16 @@
 .formContainer{
   position: absolute;
   padding: auto;
-  width: 20%;
+  width: 30%;
   height: 50%;
   margin-top: 10%;
   margin-left: 45%;
   border-radius: 1rem;
   color: white;
   padding: 2%;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-name: moveColors;
 }
 
 /*listas*/
@@ -95,6 +132,12 @@
   border-right: dotted;
   width: 90%;
 }
+.txt-radio{
+  border-radius: 0.2rem;
+}
+.txt-center{
+  text-align: center;
+}
 .txt-b{
   color: rgb(5, 5, 5);
 }
@@ -104,7 +147,117 @@
 .txt-bl{
   color: rgb(5, 5, 245);
 }
+.txt-w{
+  color:rgb(245, 245, 245)
+}
 /*labels*/
 .lb{
   margin:1rem; 
 }
+
+/*posisiones*/
+.p-ab{
+  position: absolute;
+}
+.p-r{
+  position: relative;
+}
+
+/*Displays*/
+.dp-ib{
+  display: inline-block;
+}
+
+/*Anchos*/
+.w-10{
+  width: 10%;
+}
+.w-20{
+  width: 20%;
+}
+.w-30{
+  width: 30%;
+}
+.w-35{
+  width: 35%;
+}
+.w-40{
+  width: 40%;
+}
+.w-50{
+  width: 50%;
+}
+.w-70{
+  width: 70%;
+}
+.w-80{
+  width: 80%;
+}
+.w-100{
+  width: 100%;
+}
+
+/*Heidht*/
+
+.h-80{
+  width: 80%;
+}
+.h-100{
+  width: 100%;
+}
+/*Slider*/
+.slider{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease-in-out;
+  background-color: rgb(100, 94, 85);
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.containerSlider{
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  grid-template-rows: 100%;
+  width: 100%;
+  height: 100%;
+  animation-name: moveForThree;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+/*ImagenesSlider*/
+
+.img0{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../image/1.jpg');
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.img1{
+  position: relative;
+  background-image: url('../image/2.png');
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.img2{
+  position: relative;
+  background-image: url('../image/3.jpg');
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
