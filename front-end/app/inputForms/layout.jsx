@@ -13,7 +13,7 @@ export default function inputFormsLayout({children}){
     return(
         <Container classis="container bg-b">
           <div>
-            <label className='txt-w w-20 txt-center title1 p-ab'>InteligentStore</label>
+            <label className='txt-w w-20  title1 p-ab'>InteligentStore</label>
             <div className='nav-container-v'>
               <Navigation/>
             </div>

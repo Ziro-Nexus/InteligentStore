@@ -1,38 +1,38 @@
-"use client"
-import { useState } from 'react'
+"use client";
+import { useState } from "react";
 
 export default function LogPage() {
-  const [value1, setValue1] = useState('');
-  const [value2, setValue2] = useState('');
-
-  const tickets = [
-    {
-      label: "Email: ",
-      type: "email",
-      name: "email",
-    },
-    {
-      label: "Password:",
-      type: "password",
-      name: "password",
-    },
-  ];
+  const [emailState, setEmailState] = useState("");
+  const [passwordState, setPasswordState] = useState("");
 
   const handleClick = () => {
-    console.log('Value 1:', value1);
-  }
+    console.log("email: ", emailState);
+    console.log("password: ", passwordState);
+  };
 
   return (
     <form action="" id="formOne" method="get" className="formContainer bg-bl">
-      {tickets.map(({ label, type, name }) => (
-        <>
-          <labe className="lb">{label}</labe>
-          <br />
-          <input type={type} name={name} id={name} className="txt " value={value1} onChange={e => setValue1(e.target.value)} />
-        </>
-      ))
-        
-      }
+      <labe className="lb">Email: </labe>
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        className="txt "
+        value={emailState}
+        onChange={(e) => setEmailState(e.target.value)}
+      />
+
+      <labe className="lb">Password: </labe>
+      <br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        className="txt "
+        value={passwordState}
+        onChange={(e) => setPasswordState(e.target.value)}
+      />
 
       <button className="btn bg-rd" onClick={handleClick}>
         Get In

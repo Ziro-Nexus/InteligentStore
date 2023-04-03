@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Container from './components/Containers/Container'
 import {Headeris} from './components/Headeris'
 import ImageCarrusel from './components/carrusel/ImageCarrusel'
+
 export default function Home() {
 
   return (

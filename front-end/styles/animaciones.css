@@ -38,24 +38,24 @@
 
   @keyframes moveColors {
     25% {
-      background-color: red;
+      background-color: rgba(252, 8, 8, 0.541);
     }
     28% {
-      background-color: blue;
+      background-color: rgba(0, 0, 255, 0.527);
     }
     54% {
-      background-color: black;
+      background-color: rgba(43, 42, 42, 0.76);
     }
     58% {
-      background-color:  orange;
+      background-color:  rgba(255, 166, 0, 0.753);
     }
     85% {
-      background-color: yellow;
+      background-color: rgba(255, 255, 19, 0.767);
     }
     90% {
-      background-color: green;
+      background-color: rgba(16, 240, 16, 0.678);
     }
     100% {
-      background-color: navy;
+      background-color: rgba(0, 0, 255, 0.603);
     }
   }
