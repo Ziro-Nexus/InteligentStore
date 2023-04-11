@@ -1,0 +1,41 @@
+/*header variables*/
+$header-height: 80px;
+$header-bg-color: #333;
+$haader-font-size: 2rem;
+$header-font-color: white;
+$header-max-width: 95%;
+$header-padding: 0 2rem;
+
+/*title variables*/
+$title-max-width: 40%;
+$title-color: rgb(226, 226, 173);
+$title-padding: 1rem;
+
+@mixin Myheaderis{
+  height: $header-height;
+  background-color: $header-bg-color;
+  color: $header-font-color;
+  font-size : $haader-font-size;
+  width: header-whidth($header-max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  &__title{
+    width: 20%;
+
+  }
+
+}
+@function header-whidth($max-width: $header-max-width){
+  $width: 85%;
+  @if $width > $max-width{
+
+    @return $max-width;
+
+  }@else{
+    @return $width;
+  }
+}
