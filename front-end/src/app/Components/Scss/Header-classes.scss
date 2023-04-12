@@ -1,41 +1,95 @@
 /*header variables*/
-$header-height: 80px;
-$header-bg-color: #333;
-$haader-font-size: 2rem;
+$header-height: 10%;
+$header-bg-color: #0f0f0f;
 $header-font-color: white;
 $header-max-width: 95%;
-$header-padding: 0 2rem;
+$header-padding: 0 2%;
 
 /*title variables*/
-$title-max-width: 40%;
+$title-max-width: 45%;
 $title-color: rgb(226, 226, 173);
-$title-padding: 1rem;
+$title-padding: 2%;
+$title-font-size: 200%;
 
-@mixin Myheaderis{
+/*links variables*/
+$link-max-width: 45%;
+$link-color: rgba(255, 23, 23, 0.897);
+$link-padding: 1%;
+$link-font-size: 180%;
+
+@mixin Myheaderis {
   height: $header-height;
   background-color: $header-bg-color;
   color: $header-font-color;
-  font-size : $haader-font-size;
   width: header-whidth($header-max-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2%;
   border-radius: 1rem;
-  &__title{
-    width: 20%;
 
+  &__title {
+    width: title-whidth($header-max-width);
+    padding: $title-padding;
+    color: $title-color;
+    font-size: $title-font-size;
   }
 
+  &__links-content {
+    width: links-whidth($link-max-width);
+    padding: $link-padding;
+    color: $link-color;
+    font-size: $link-font-size;
+  }
+
+  &__list {
+    display: inline-block;
+    margin-left: 5%;
+    width: 40%;
+    background-color: red;
+    border-radius: 1rem;
+    text-align: center;
+    list-style-type: none;
+    padding: 0.2%;
+  }
+  &__list:hover{
+    background-color: orangered;
+    padding: 1%;
+  }
+  &__link {
+    text-decoration: none;
+    padding: 0.7%;
+    color: yellow;
+  }
+  &__link:hover{
+    color: rgb(212, 210, 210);
+  }
 }
-@function header-whidth($max-width: $header-max-width){
+
+
+
+@function header-whidth($max-width: $header-max-width) {
   $width: 85%;
-  @if $width > $max-width{
-
+  @if $width > $max-width {
     @return $max-width;
-
-  }@else{
+  } @else {
+    @return $width;
+  }
+}
+@function title-whidth($max-width: $title-max-width) {
+  $width: 40%;
+  @if $width > $max-width {
+    @return $max-width;
+  } @else {
+    @return $width;
+  }
+}
+@function links-whidth($max-width: $link-max-width) {
+  $width: 40%;
+  @if $width > $max-width {
+    @return $max-width;
+  } @else {
     @return $width;
   }
 }

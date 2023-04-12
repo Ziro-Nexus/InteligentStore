@@ -1,19 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef } from '@angular/core';
 
 @Component({
   selector: 'headeris',
   templateUrl: './headeris.component.html',
-  styleUrls: ['./headeris.component.scss']
+  styleUrls: ['./headeris.component.scss'],
 })
+
 export class HeaderisComponent {
-  public title : string;
-  public linkOne : string;
-  public linkTwo : string;
+  public title_head : string;
+  public linkOne: string;
+  public linkTwo: string;
 
   constructor(){
-    this.title = "InteligentStore";
+    this.title_head = "InteligentSore";
     this.linkOne = "Log In";
-    this.linkTwo = "Sig up";
-    console.log("works corretly!!");
+    this.linkTwo = "Sig Up";
   }
 }

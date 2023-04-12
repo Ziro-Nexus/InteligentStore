@@ -1,0 +1,5 @@
+@import '../Scss/Container-classes';
+
+.container{
+  @include containt();
+}
