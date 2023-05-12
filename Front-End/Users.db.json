@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "dateOfBirth": "1990-05-23",
+      "password": "password1",
+      "confirmPassword": "password1",
+      "typeOfBusiness": "Minorista o Tienda"
+    },
+    {
+      "id": 2,
+      "name": "Mary Johnson",
+      "email": "mary.johnson@example.com",
+      "dateOfBirth": "1985-07-12",
+      "password": "password2",
+      "confirmPassword": "password2",
+      "typeOfBusiness": "Frabricante"
+    },
+    {
+      "id": 3,
+      "name": "David Lee",
+      "email": "david.lee@example.com",
+      "dateOfBirth": "1995-01-03",
+      "password": "password3",
+      "confirmPassword": "password3",
+      "typeOfBusiness": "Distribuidor"
+    },
+    {
+      "id": 4,
+      "name": "Anna Kim",
+      "email": "anna.kim@example.com",
+      "dateOfBirth": "1992-09-18",
+      "password": "password4",
+      "confirmPassword": "password4",
+      "typeOfBusiness": "Comercio electrónico"
+    },
+    {
+      "name": "Fernet",
+      "email": "Fernet@email.com",
+      "dateOfBirth": "18-05-1964",
+      "password": "J1c!hd*0Q6LoFb6b",
+      "confirmPassword": "J1c!hd*0Q6LoFb6b",
+      "typeOfBusiness": "Minorista o Tienda",
+      "id": 5
+    }
+
+  ]
+}

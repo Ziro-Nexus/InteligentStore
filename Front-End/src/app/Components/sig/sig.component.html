@@ -1,0 +1,59 @@
+<form
+  (ngSubmit)="onNewUser()"
+  [formGroup]="sigGroup"
+  class="contenid w-50 p-2 mx-auto text-center bg-dark form-group"
+>
+  <div class="contenid-Control mt-2 w-100">
+    <input
+      formControlName="name"
+      class="form-control texting w-100"
+      type="text"
+      placeholder="Name and Last name"
+    />
+  </div>
+  <div class="contenid-Control w-100 mt-2">
+    <input
+      formControlName="email"
+      class="form-control texting w-100"
+      type="text"
+      placeholder="Email"
+    />
+  </div>
+  <div class="contenid-Control w-100 mt-2">
+    <input
+      formControlName="password"
+      class="form-control texting w-100"
+      type="password"
+      placeholder="Password"
+    />
+  </div>
+  <div class="contenid-Control w-100 mt-2">
+    <input
+      formControlName="confirmPassword"
+      class="texting w-100 form-control"
+      type="password"
+      placeholder="Confirm Password"
+    />
+  </div>
+  <div class="contenid-Control w-100 mt-2">
+    <input
+    formControlName="dateOfBirth"
+      class="texting w-100 form-control"
+      type="datetime"
+      placeholder="Date of Birth"
+    />
+  </div>
+  <div class="contenid-Control w-100 mt-2">
+    <select formControlName="typeOfBusiness" class="form-select w-100 bg-dark text-light">
+      <option value=""></option>
+      <option *ngFor="let busin of businessis" [value]="busin">{{busin}}</option>
+    </select>
+  </div>
+  <div class="contenid-Control w-100 mt-2">
+    <input
+      type="submit"
+      class="w-100 text-center btn btn-warning"
+      value="Siguiente"
+    />
+  </div>
+</form>

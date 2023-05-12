@@ -1,0 +1,31 @@
+<form
+  (ngSubmit)="onLogUser()"
+  [formGroup]="logGroup"
+  class="contenid w-50 p-2 mx-auto text-center bg-dark form-group"
+>
+  <div class="contenid-Control w-100 mt-2">
+    <input
+      formControlName="email"
+      class="form-control texting w-100"
+      type="text"
+      placeholder="Email"
+    />
+  </div>
+  <div class="contenid-Control w-100 mt-2">
+    <input
+      formControlName="password"
+      class="form-control texting w-100"
+      type="password"
+      placeholder="Password"
+    />
+  </div>
+  <div class="contenid-Control w-100 mt-2">
+    <input
+      type="submit"
+      class="w-100 text-center btn btn-warning"
+      value="Siguiente"
+      [disabled]="!logGroup.valid"
+    />
+  </div>
+</form>
+
