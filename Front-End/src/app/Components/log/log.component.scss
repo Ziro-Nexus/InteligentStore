@@ -1,8 +1,48 @@
+input.ng-valid.ng-touched.ng-dirty {
+  border: 1.5px solid rgb(166, 209, 8);
+}
 
-  input.ng-valid.ng-touched.ng-dirty{
-    border: 1.5px solid rgb(166, 209, 8);
+input.ng-invalid.ng-touched.ng-dirty {
+  border: 1px solid rgb(226, 42, 10);
+}
+
+.contenid{
+  width: 35%;
+  height: 65%;
+  padding: 2%;
+  margin: auto;
+  margin-top: 6%;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.747);
+  .click-back{
+    position: absolute;
+    width: 3%;
+    background-color: transparent;
+    padding: 0.3%;
+    margin-left: 10.5%;
+    margin-top: -1.5%;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
   }
-  input.ng-invalid.ng-touched.ng-dirty{
-    border: 1px solid rgb(226, 42, 10);
+  .contenid-Control{
+    margin-top: 5rem;
+    .form-control{
+      border-top: none;
+      border-radius: 1rem;
+      text-align: center;
+      color: orange;
+      background-color: transparent;
+    }
+    span{
+      color:tomato;
+    }
   }
 
+  .contenid-sigUp{
+    margin-top: 5%;
+    color: orange;
+  }
+
+}

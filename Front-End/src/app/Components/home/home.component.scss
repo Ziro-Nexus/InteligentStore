@@ -1,0 +1,33 @@
+*{
+  width: 100%;
+}
+.headeris{
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  margin-top: -2%;
+  background-color: rgba(0, 0, 0, 0.89);
+  text-align: center;
+  padding: 1%;
+  .title{
+    color: red;
+    font-size: 200%;
+  }
+  .contenid-button-header{
+    width: 100%;
+    padding-left: 1%;
+    .clicken{
+      margin-top: 30%;
+    }
+  }
+}
+.contenid{
+  width: 75%;
+  height: 720px;
+  margin: auto;
+  margin-top: 2%;
+  margin-left: 22%;
+  border-radius: 1rem;
+  overflow: hidden scroll;
+  scrollbar-width: none;
+}

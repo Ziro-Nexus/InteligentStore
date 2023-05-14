@@ -44,7 +44,15 @@
       "confirmPassword": "J1c!hd*0Q6LoFb6b",
       "typeOfBusiness": "Minorista o Tienda",
       "id": 5
+    },
+    {
+      "name": "Maximo Giraldo",
+      "email": "maximo@email.com",
+      "dateOfBirth": "05/3/2014",
+      "password": "Maximo2",
+      "confirmPassword": "Maximo2",
+      "typeOfBusiness": "Minorista o Tienda",
+      "id": 6
     }
-
   ]
 }

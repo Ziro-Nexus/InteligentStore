@@ -1,31 +1,37 @@
 <form
   (ngSubmit)="onLogUser()"
   [formGroup]="logGroup"
-  class="contenid w-50 p-2 mx-auto text-center bg-dark form-group"
+  class="contenid form-group"
 >
-  <div class="contenid-Control w-100 mt-2">
+  <a class="btn click-back" routerLink="">X</a>
+  <div class="contenid-Control">
     <input
       formControlName="email"
-      class="form-control texting w-100"
+      class="form-control"
       type="text"
       placeholder="Email"
     />
   </div>
-  <div class="contenid-Control w-100 mt-2">
+  <div class="contenid-Control">
     <input
       formControlName="password"
-      class="form-control texting w-100"
+      class="form-control"
       type="password"
       placeholder="Password"
     />
   </div>
-  <div class="contenid-Control w-100 mt-2">
+  <div class="contenid-Control">
     <input
       type="submit"
-      class="w-100 text-center btn btn-warning"
+      class="btn btn-warning"
       value="Siguiente"
       [disabled]="!logGroup.valid"
     />
   </div>
+  <div class="contenid-sigUp">
+    <p>
+      Don't have an account? Don't worry, redirect to create one
+      <a routerLink="/home/sig"> here. </a>"
+    </p>
+  </div>
 </form>
-

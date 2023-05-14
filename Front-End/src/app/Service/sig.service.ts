@@ -17,4 +17,7 @@ export class SigService {
     return this.http.post(userUrl, user);
   }
 
+  delete(id: number){
+    return this.http.delete(`${userUrl}/${id}`);
+  }
 }
